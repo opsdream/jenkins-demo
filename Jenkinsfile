@@ -28,7 +28,7 @@ pipeline{
             echo "========pipeline executed successfully ========"
         }
         failure{
-            echo "========pipeline execution failed==="
+            echo "========pipeline execution failed===EEE"
         }
     }
 }
