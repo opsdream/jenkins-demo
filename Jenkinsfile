@@ -1,9 +1,11 @@
 pipeline{
-    agent any
+    agent{
+        docker( image 'node' )
+    }
     stages{
         stage("A"){
             steps{
-                echo "========executing A========"
+                sh 'node --version'
             }
             post{
                 always{
